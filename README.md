@@ -21,3 +21,12 @@ Mood-Based Hybrid Book Recommender that combines mood detection with content-bas
 - In Google Colab, the project includes transformer-based text mood detection and DeepFace-based emotion recognition from selfies.
 - In the local Streamlit app (Windows, Python 3.12), mood is selected via dropdown because TensorFlow / DeepFace could not be installed reliably.
 - Evaluation includes a global-mean RMSE baseline on a 20k-rating subset of the Book-Crossing dataset.
+## Dataset
+
+This project uses the public **Book-Crossing dataset**.
+
+You can download it from:
+- Kaggle: https://www.kaggle.com/datasets/syedjaferk/book-crossing-dataset
+  (or any other mirror you prefer)
+
+After download, place the CSV files into the `data/` folder before running the app.
