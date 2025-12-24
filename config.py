@@ -1,0 +1,13 @@
+import os
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_PATH  = os.path.join(BASE_DIR, "data")
+MODEL_PATH = os.path.join(BASE_DIR, "models")
+USER_PATH  = os.path.join(BASE_DIR, "users")
+os.makedirs(DATA_PATH, exist_ok=True); os.makedirs(MODEL_PATH, exist_ok=True); os.makedirs(USER_PATH, exist_ok=True)
+RATINGS_FILE = os.path.join(DATA_PATH, "Ratings.csv")
+BOOKS_FILE   = os.path.join(DATA_PATH, "Books.csv")
+USERS_FILE   = os.path.join(DATA_PATH, "Users.csv")
+USER_PROFILES_FILE   = os.path.join(USER_PATH, "user_profiles.pkl")
+USER_ID_TRACKER_FILE = os.path.join(USER_PATH, "user_id_tracker.txt")
+TFIDF_VECTORIZER_FILE = os.path.join(MODEL_PATH, "tfidf_vectorizer.pkl")
+TFIDF_MATRIX_FILE     = os.path.join(MODEL_PATH, "tfidf_matrix.pkl")
